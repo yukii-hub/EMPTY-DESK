@@ -236,3 +236,9 @@
     
         transform: translateX(-150px);
     }
+ @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
