@@ -11,13 +11,30 @@
             margin: 0;
             padding: 0;
         }
-        .header {
+        header {
             background: linear-gradient(to right, #000000, #090942, #100a4d );
             color: white;
             padding: 15px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: left;
+        }
+        nav {
+            background: linear-gradient(to right, #000000, #090942, #100a4d );
+            color: white;
+            padding: 15px;
+            text-align: right;
+        }
+        .nav a {
+            color: white;
+            padding: 2rem;
             font-size: 24px;
             font-weight: bold;
-            text-align: center;
+            text-align: right;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            text-decoration: none;
         }
         .file-item {
             display: flex;
@@ -59,9 +76,13 @@
     </style>
 </head>
 <body>
-    <div class="header">
-
+<header>
+    <div class="nav">
+        <a href="SUBJECTS.html">Subject</a>
+        <a href="bascal.html">Video</a>
     </div>
+</header>
+<article>
     <div class="file-item">
         <img src="file-icon.png" alt="File" class="file-icon">
         <a href="file1.pdf" download>Lesson 1</a>
@@ -145,5 +166,6 @@
     <img src="file-icon.png" alt="File" class="file-icon">
     <a href="file4.zip" download>Lesson 21</a>
 </div>
+</article>
 </body>
 </html>
